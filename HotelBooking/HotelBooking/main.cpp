@@ -101,6 +101,7 @@ class suiteRoom:public room{
 public:
     suiteRoom(int id,double price):room(id,SUITE,price){}
 };
+
 class roomFactory{
 public:
     static room* createRoom(RoomType type,int id,double price){
@@ -267,7 +268,7 @@ int main(int argc, const char * argv[]) {
     
     
     
-    user* u=new user("bubu");
+    user* u=new user("Appu");
     vector<hotel*> res=hm.searchByLocation("GOA");
     if(res[0])
     {
